@@ -20,12 +20,12 @@ def simulate_sampling_error(true_value, sample_size, num_iterations, std):
 def plot_sampling_error(errors, samples):
     fig, ax = plt.subplots(1, 2, figsize=(12, 4))
 
-    ax[0].hist(errors, bins=25, edgecolor='black')
+    ax[0].hist(errors, bins=30, edgecolor='black')
     ax[0].set_xlabel('Sampling Error')
     ax[0].set_ylabel('Frequency')
     ax[0].set_title('Sampling Error Distribution')
 
-    ax[1].hist(samples, bins=25, edgecolor='black')
+    ax[1].hist(samples, bins=30, edgecolor='black')
     ax[1].set_xlabel('Sample Value')
     ax[1].set_ylabel('Frequency')
     ax[1].set_title('Sample Value Distribution')
